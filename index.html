@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="" id="htmlpage">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md  fixed-top nav-light bg-light  " id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tech StartUp</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active navlink" aria-current="page" href="#">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link navlink" href="#features">features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlink" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlink" href="rating.html">review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlink" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlink" href="testimonial.html">Testimonials</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-success mx-3" type="button" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" type="button" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign Up</button>
+                </form>
+                <div class="form-check form-switch mx-3">
+                    <input class="form-check-input " type="checkbox" id="darkModeSwitch">
+                    <label class="form-check-label" for="darkModeSwitch"></label>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <!-- Button trigger modal -->
+
+    <!-- Modal Login -->
+    <div class="modal fade " id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login Form</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label" re>Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                    <p>Don't have an account create one</p>
+                    <button type="button" class="btn btncolor" data-bs-dismiss="modal">Login</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Sign up-->
+
+    <div class="modal fade " id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login Form</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                    <button type="button" class=" btn btn-danger" data-bs-dismiss="modal">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section-->
+    <section class="hero-section" id="about">
+        <div class="hero">
+            <div>
+                <h1 class="display-4">Chandu Tech Solutions</h1>
+                <p class="lead">Your one-stop-shop for all development needs<br>| Web | Mobile | software Development
+                    Services | </p>
+                <button class="btn btn-custom mt-3" onclick="ctaClick()">Get Started</button>
+            </div>
+        </div>
+
+
+        <!-- features Section -->
+
+        <section class="container features-section" id="features">
+            <h2 class="align-items-center my-2">Our Company Features</h2><br><br>
+            <div class="row featurette my-6">
+                <div class="col-md-6 mx-3">
+                    <h3 class="featurette-heading fw-normal lh-1">Welcome to <br>Chandu Tech Solutions </h3>
+                    <br><br>
+                    <p class="lead">At Chandu Tech Solutions, we innovate, develop, and deliver top-notch web solutions
+                        tailored to your business needs.</p>
+                </div>
+                <div class="col-md-4 mx-3">
+                    <img src="chandusolutions.jpeg" alt="company logo" width="500" height="300">
+                </div>
+            </div>
+            <div class="row featurette my-4">
+                <div class="col-md-6 order-md-2">
+                    <h3 class="featurette-heading fw-normal lh-1">Our Mission</h3><br><br>
+                    <p class="lead">To revolutionize businesses by providing cutting-edge web solutions that enhance
+                        digital presence and efficiency.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="mission.jpeg" alt="our mission" width="400" height="300">
+                </div>
+            </div>
+            <div class="row featurette my-4">
+                <div class="col-md-7">
+                   
+                    <h3>Our Vision</h3><br><br>
+                    <p>To be the leading technology partner for startups and enterprises in building future-ready web
+                        applications.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="vision.jpeg" alt="our Vision" width="400" height="300">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <div class="heading text-center my-4" id="services">
+            <h3>Our Services<h3>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-5 my-4">
+                <div class="col">
+                    <div class="card cardhover">
+                        <img src="uiux.avif" class="bd-placeholder-img card-img-top" width="100%" height="200"
+                            alt="UI/UX Design">
+                        <div class="card-body">
+                            <h5 class="card-title">UI/UX Design</h5>
+                            <p class="card-text">Creating user-friendly and visually appealing designs.</p>
+                            <a href="#" class="btn btn-sm btncolor">Learn More</a>
+                            <br>
+                            <span class="star1" data-value="1" style="color: gold;">&#9733;</span>
+                            <span class="star2" data-value="2" style="color: gold;">&#9733;</span>
+                            <span class="star3" data-value="3" style="color: gold;">&#9733;</span>
+                            <span class="star4" data-value="4" style="color: gold;">&#9733;</span>
+                            <span class="star5" data-value="5" style="color: gold;">&#9733;</span>
+                        </div>
+                       
+
+                            
+                        
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card cardhover">
+                        <img src="web.jpg" class="bd-placeholder-img card-img-top" width="100%" height="200"
+                            alt="Web Development">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Building high-quality and scalable websites.</p>
+                            <a href="" class="btn btn-sm btncolor">Get Started</a><br>
+                            <span class="star1" data-value="1" style="color: gold;">&#9733;</span>
+                            <span class="star2" data-value="2" style="color: gold;">&#9733;</span>
+                            <span class="star3" data-value="3" style="color: gold;">&#9733;</span>
+                            <span class="star4" data-value="4" style="color: gold;">&#9733;</span>
+                            <span class="star5" data-value="5" style="color: gold;">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card cardhover">
+                        <img src="app.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="200"
+                            alt="App Development">
+                        <div class="card-body">
+                            <h5 class="card-title">App Development</h5>
+                            <p class="card-text">Creating innovative mobile applications for various platforms.</p>
+                            <a href="" class="btn btn-sm btncolor">Request a Demo</a><br>
+                            <span class="star1" data-value="1" style="color: gold;">&#9733;</span>
+                            <span class="star2" data-value="2" style="color: gold;">&#9733;</span>
+                            <span class="star3" data-value="3" style="color: gold;">&#9733;</span>
+                            <span class="star4" data-value="4" style="color: gold;">&#9733;</span>
+                            <span class="star5" data-value="5" style="color: gold;">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card cardhover">
+                        <img src="cloud.jpg" class="bd-placeholder-img card-img-top" width="100%" height="200"
+                            alt="Cloud Solutions">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud Solutions</h5>
+                            <p class="card-text">Providing scalable and secure cloud-based solutions.</p>
+                            <a href="" class="btn btn-sm btncolor ">Hire Us</a>
+                            <br>
+                            <span class="star1" data-value="1" style="color: gold;">&#9733;</span>
+                            <span class="star2" data-value="2" style="color: gold;">&#9733;</span>
+                            <span class="star3" data-value="3" style="color: gold;">&#9733;</span>
+                            <span class="star4" data-value="4" style="color: gold;">&#9733;</span>
+                            <span class="star5" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card cardhover">
+                        <img src="seo.jpg" class="bd-placeholder-img card-img-top" width="100%" height="200"
+                            alt="SEO Optimization">
+                        <div class="card-body">
+                            <h5 class="card-title">SEO Optimization</h5>
+                            <p class="card-text">Boosting your website’s visibility and ranking.</p>
+                            <a href="" class="btn btn-sm btncolor">Start Now</a><br>
+                            <span class="star1" data-value="1" style="color: gold;">&#9733;</span>
+                            <span class="star2" data-value="2" style="color: gold;">&#9733;</span>
+                            <span class="star3" data-value="3" style="color: gold;">&#9733;</span>
+                            <span class="star4" data-value="4" style="color: gold;">&#9733;</span>
+                            <span class="star5" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card cardhover">
+                        <img src="customdev.png" class="bd-placeholder-img card-img-top" width="100%" height="200"
+                            alt="Custom Software">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Development</h5>
+                            <p class="card-text">Developing tailored software solutions for businesses.</p>
+                            <a href="" class="btn btn-sm btncolor">Contact Us</a>
+                            <br>
+                            <span class="star1" data-value="1" style="color: gold;">&#9733;</span>
+                            <span class="star2" data-value="2" style="color: gold;">&#9733;</span>
+                            <span class="star3" data-value="3" style="color: gold;">&#9733;</span>
+                            <span class="star4" data-value="4" style="color: gold;">&#9733;</span>
+                            <span class="star5" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Introducing our team
+ -->
+<section class="our-team">
+ <h3 class="text-center">Our Team Members</h3>
+ <div class="container d-flex my-4 mx-10 team">
+    
+
+    <div class="col-md-3 team-member">
+        <img src="chandu.jpg" alt="Chandu " width="200px" height="200px" class="images">
+        <h4>Chandrakala</h4>
+        <p>Founder &amp; CEO</p>
+    </div>
+    <div class="col-md-3 team-member">
+        <img src="kushi.jpeg" alt="Kushal" width="200px" height="200px" class="images">
+        <h4>Kushal</h4>
+        <p>CTO &amp; Lead Developer</p>
+    </div>
+    <div class="col-md-3 team-member">
+        <img src="mom.jpeg" alt="Hema"width="200px" height="200px" class="images">
+        <h4>Hema</h4>
+        <p>Head of UI/UX</p>
+    </div>
+    <div class="col-md-3 team-member">
+        <img src="daddy.jpeg" alt="Hema"width="200px" height="200px" class="images">
+        <h4>Kumar</h4>
+        <p>Decision Maker </p>
+    </div>
+</div>
+</section>
+
+        <!-- Footer Section-->
+        <footer class="footer text-center text-lg-start" id="footerid">
+            <div class="container">
+                <div class="row">
+                    <!-- About Section -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h5>About Us</h5>
+                        <p>About Given DAta</p>
+                    </div>
+
+                    <!-- Useful Links -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="col-lg-4 col-md-12">
+                        <h5>Follow Us</h5>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center py-3 mt-3" style="background: #181a1b; " id="divmiddleline">
+                © 2024 YourWebsite. All Rights Reserved.
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+<script>
+    function ctaClick() {
+        alert("Thank you for showing interest! Stay tuned for more.");
+    }
+    const html = document.getElementById("htmlpage");
+    const checkbox = document.getElementById("darkModeSwitch");
+    const nav = document.getElementById("navbar")
+    const footercolor=document.getElementById("footerid");
+    checkbox.addEventListener("change", () => {
+        if (checkbox.checked) {
+            html.setAttribute("data-bs-theme", "dark");
+            nav.classList.add("nav-dark");
+            nav.classList.add("bg-dark");
+            nav.classList.remove("nav-light");
+            nav.classList.remove("bg-light");
+            footercolor.style.backgroundColor ="#2e3033"
+
+        } else {
+            html.setAttribute("data-bs-theme", "light");
+            nav.classList.add("nav-light");
+            nav.classList.add("bg-light");
+            nav.classList.remove("nav-dark");
+            nav.classList.remove("bg-dark");
+            footercolor.style.backgroundColor ="#e9ecef" ;
+        }
+    });
+
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
